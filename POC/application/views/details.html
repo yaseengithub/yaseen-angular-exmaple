@@ -1,0 +1,31 @@
+<div class="container">
+  <h2>User Details</h2>
+  <div class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">User Name:</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" ng-model="user.name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Operating System:</label>
+      <div class="col-sm-6">          
+        <input type="text" class="form-control" ng-model="user.os">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Browser:</label>
+      <div class="col-sm-6">          
+        <input type="text" class="form-control" ng-model="user.browser">
+      </div>
+    </div>
+    
+    <div class="form-group">      
+      <div class="col-sm-2" for="pwd"></div>  
+      <div class="col-sm-6 pull-right">
+        <button type="submit" class="btn btn-default" ng-click="sumbitdetails()">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

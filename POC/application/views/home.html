@@ -1,0 +1,33 @@
+
+<div class="container">
+	<div class="row" style="margin: 10px 0px;">
+		<div class="col-sm-8"></div>
+		<div class="col-sm-4">
+			<button class="btn btn-primary pull-right" ng-click="adduser()">Add New User</button>
+		</div>
+	</div>
+	<div class="row">
+	<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>User Name</th>
+        <th>Operating System</th>
+        <th>Browser</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="user in users">
+        <td>{{user.name}}</td>
+        <td>{{user.os}}</td>
+        <td>{{user.browser}}</td>
+        <td>
+        	<span class="glyphicon glyphicon-pencil" ng-click="editUser($index)"></span>
+        	<span class="glyphicon glyphicon-remove" ng-click="deleteUser($index)"></span>
+        </td>
+      </tr>
+     
+    </tbody>
+  </table>
+	</div>
+</div>
